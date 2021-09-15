@@ -5,7 +5,7 @@ public class StringCalculatorTests {
     @Test
     public void test1() {
         StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(1, stringCalculator.add("1"));
+        assertEquals(3, stringCalculator.add("1,2"));
     }
 
 }
