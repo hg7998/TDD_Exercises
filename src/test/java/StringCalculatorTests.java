@@ -20,5 +20,11 @@ public class StringCalculatorTests {
         assertEquals(0, stringCalculator.add(""));
     }
 
+    @Test
+    public void test4() {
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(8, stringCalculator.add("2,2,2,2"));
+    }
+
 
 }

@@ -1,24 +1,17 @@
 public class StringCalculator {
     public int add(String numbers) {
-        int firstNumber;
-        int secondNumber;
-        int delimiterPosition;
-        int sum;
+        int number = 0;
+        int sum = 0;
 
         if (numbers.length() == 0) {
             return 0;
+        }]
+
+        for (int i = 0; i < numbers.length(); i += 2) {
+            number = Integer.parseInt(String.valueOf(numbers.charAt(i)));
+            sum += number;
         }
 
-        firstNumber = Integer.parseInt(String.valueOf(numbers.charAt(0)));
-
-        if (numbers.length() == 1) {
-            return firstNumber;
-        }
-        else {
-            delimiterPosition = numbers.indexOf(",");
-            secondNumber = Integer.parseInt(String.valueOf(numbers.charAt(delimiterPosition+1)));
-            sum = firstNumber + secondNumber;
-        }
         return sum;
     }
 }
