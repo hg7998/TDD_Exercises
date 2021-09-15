@@ -38,5 +38,10 @@ public class StringCalculatorTests {
         assertEquals(10, stringCalculator.add("1\n2\n3\n4"));
     }
 
+    @Test
+    public void test7() {
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(3, stringCalculator.add("//;\n1;2"));
+    }
 
 }

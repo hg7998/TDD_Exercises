@@ -7,9 +7,14 @@ public class StringCalculator {
             return 0;
         }
 
-        for (int i = 0; i < numbers.length(); i += 2) {
-            number = Integer.parseInt(String.valueOf(numbers.charAt(i)));
-            sum += number;
+        for (int i = 0; i < numbers.length(); i++) {
+            try {
+                number = Integer.parseInt(String.valueOf(numbers.charAt(i)));
+                sum += number;
+            }
+            catch(NumberFormatException nfe) {
+                continue;
+            }
         }
 
         return sum;
