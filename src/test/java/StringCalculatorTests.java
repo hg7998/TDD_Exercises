@@ -26,5 +26,17 @@ public class StringCalculatorTests {
         assertEquals(8, stringCalculator.add("2,2,2,2"));
     }
 
+    @Test
+    public void test5() {
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(6, stringCalculator.add("1\n2,3"));
+    }
+
+    @Test
+    public void test6() {
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(10, stringCalculator.add("1\n2\n3\n4"));
+    }
+
 
 }
