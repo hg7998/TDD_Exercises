@@ -49,7 +49,7 @@ public class StringCalculatorTests {
         StringCalculator stringCalculator = new StringCalculator();
 
         NegativeNumberException exception = assertThrows(NegativeNumberException.class, () -> {
-            stringCalculator.add("-5, 2, 3, 4, -8, 10");
+            stringCalculator.add("//[*]-5*2*3*4*-8*10");
         });
 
         assertEquals("Negatives not allowed: -5 -8 ", exception.getMessage());
