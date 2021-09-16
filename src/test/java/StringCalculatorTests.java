@@ -35,7 +35,7 @@ public class StringCalculatorTests {
     @Test
     public void test6() throws NegativeNumberException {
         StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(10, stringCalculator.add("1\n2\n3\n4"));
+        assertEquals(325, stringCalculator.add("1\n20\n300\n4"));
     }
 
     @Test
